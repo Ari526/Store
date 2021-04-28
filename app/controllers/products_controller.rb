@@ -1,6 +1,7 @@
 class ProductsController < ApplicationController
 	def index
 		@products = Product.all
+
 	end
 
 	def show
@@ -11,7 +12,7 @@ class ProductsController < ApplicationController
 		respond_to do |format|
         format.html
         format.js
-  end
+        end
 		@product = Product.new
 	end
 
